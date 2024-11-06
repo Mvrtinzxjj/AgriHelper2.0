@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AgriHelper - Simplificada</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>AgriHelper</h1>
+    <p>Asistente para el campo</p>
+  </header>
+
+  <main>
+    <!-- Información del clima -->
+    <section id="weather">
+      <h2>Clima Actual</h2>
+      <div id="weather-info">
+        <p>Cargando...</p>
+      </div>
+    </section>
+
+    <!-- Gestión de cultivos -->
+    <section id="crops">
+      <h2>Mis Cultivos</h2>
+      <ul id="crop-list"></ul>
+      <form id="crop-form">
+        <input type="text" id="crop-name" placeholder="Nombre del cultivo" required>
+        <button type="submit">Añadir Cultivo</button>
+      </form>
+    </section>
+
+    <!-- Recordatorios de riego -->
+    <section id="reminders">
+      <h2>Recordatorios de Riego</h2>
+      <ul id="reminder-list"></ul>
+      <form id="reminder-form">
+        <input type="text" id="reminder-crop" placeholder="Cultivo para riego" required>
+        <input type="date" id="reminder-date" required>
+        <button type="submit">Añadir Recordatorio</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 AgriHelper</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
