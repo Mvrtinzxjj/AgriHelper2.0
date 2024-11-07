@@ -3,13 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AgriHelper - Simplificada</title>
+  <title>AgriHelper - Mejorado</title>
   <link rel="stylesheet" href="style.css">
+  <!-- Incluir Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
 </head>
 <body>
   <header>
     <h1>AgriHelper</h1>
-    <p>Asistente para el campo</p>
+    <p>Tu asistente agrícola interactivo</p>
   </header>
 
   <main>
@@ -41,6 +43,12 @@
         <button type="submit">Añadir Recordatorio</button>
       </form>
     </section>
+
+    <!-- Mapa interactivo -->
+    <section id="map">
+      <h2>Ubicación de Cultivos</h2>
+      <div id="mapid"></div>
+    </section>
   </main>
 
   <footer>
@@ -48,5 +56,7 @@
   </footer>
 
   <script src="script.js"></script>
+  <!-- Incluir Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
 </body>
 </html>
